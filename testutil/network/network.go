@@ -420,7 +420,7 @@ func New(l Logger, baseDir string, cfg Config) (*Network, error) {
 			return nil, err
 		}
 		txBuilder.SetFeeAmount(fee)    // Arbitrary fee
-		txBuilder.SetGasLimit(1000000) // Need at least 100386
+		txBuilder.SetGasLimit(10000000) // Need at least 100386
 		txBuilder.SetMemo(memo)
 
 		txFactory := tx.Factory{}
